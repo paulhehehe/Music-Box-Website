@@ -1,0 +1,70 @@
+<!-- Author 1: Lei Zhao 041086365 -->
+<!-- Author 2: Zhicheng He 041086226 -->
+<!-- Author 3: Yuling Guo 041069402 -->
+<!-- Author 4: Yu Song 040873597 -->
+<!-- Section: CST8285_301 -->
+<!-- Professor: Shehzeen Shehzeen -->
+<!-- File name: index.html -->
+<!-- Date: Jul. 23, 2023 -->
+<!-- Description: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group Music Box">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="./public/login_registration_style.css">
+    <script src="./public/login_registration_script.js" defer></script>
+    <title>MusicBox - Login page</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="logo-img" src="./image/logo.png" alt="logo">
+        <p id="logo-text">  <span class="double-shadows">MusicBox</span><p>
+    </header>
+
+    <div class="formcontainer" id="login-formcontainer">
+        <h1>Log in to <span class="double-shadows">MusicBox</span></h1>
+        <hr>
+        <form action="./private/login.php" method="post" onsubmit="return validate();">
+
+            <div class="textfield">
+                <label for="login">Email or user name</label>
+                <input type="text" name="login" id="login" placeholder="Email or user name">
+            </div>
+
+            <div class="textfield">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+
+            <!-- <div class="checkbox">
+                <input type="checkbox" name="rememberMeCheckbox" id="rememberMeCheckbox">
+                <label for="rememberMeCheckbox" id="rememberMeCheckbox-Label">Remember me</label>
+            </div> -->
+
+            <button type="submit" id="submit">Log in</button>
+
+        </form>
+
+        <hr>
+        <div id="dont-have-account">
+            <p>Don't have an account? <a href="./public/registration.html">Sign up now!</a></p>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="CopyRight">Author: Lei Zhao, Zhicheng He, Yuling Guo, Yu Song</div>
+        <div class="CopyRight">Date: 2023-08-03 &copy;All copyright reserved</div>
+    </footer>
+
+</body>
+
+</html>

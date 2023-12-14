@@ -1,0 +1,49 @@
+/* <!-- Author 1: Lei Zhao 041086365 -->
+<!-- Author 2: Zhicheng He 041086226 -->
+<!-- Author 3: Yuling Guo 041069402 -->
+<!-- Author 4: Yu Song 040873597 -->
+<!-- Section: CST8285_301 -->
+<!-- Professor: Shehzeen Shehzeen -->
+<!-- File name: jumping.css -->
+<!-- Date: Jul. 23, 2023 -->
+<!-- Description: jumping.css --> */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    align-content: baseline;
+    /*background-color:#ff81b6;*/
+    gap: 10px;
+}
+
+
+body {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 200;
+    /* background-color: #f4afe7; */
+    background-color: #111111; /* 浏览器不支持的时候显示 */    
+    /*background-image: linear-gradient(0deg, #111111,#222222 );*/  
+    color:#ddd;
+    margin: 100px;
+    padding: 0;
+}
+
+p {
+    font-size: 20pt;
+    text-align: center;
+    margin-top:300px;
+    margin-bottom:400px
+}
+
+#logo-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+#logo-img {
+    width: 80px;
+    height: 80px;
+}

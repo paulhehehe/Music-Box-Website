@@ -1,0 +1,262 @@
+/* <!-- Author 1: Lei Zhao 041086365 -->
+<!-- Author 2: Zhicheng He 041086226 -->
+<!-- Author 3: Yuling Guo 041069402 -->
+<!-- Author 4: Yu Song 040873597 -->
+<!-- Section: CST8285_301 -->
+<!-- Professor: Shehzeen Shehzeen -->
+<!-- File name: login_registration_style.css -->
+<!-- Date: Jul. 23, 2023 -->
+<!-- Description: login_registration_style.css --> */
+header {
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    align-items: center;
+    align-content: baseline;
+    background-color:#ff81b6;
+    gap: 10px;
+    width: 100%;
+}
+
+img {
+    width: 80px;
+    height: 80px;
+}
+
+body {
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 400;
+    /* background-color: #f4afe7; */
+    background-color: #111111; /* 浏览器不支持的时候显示 */    
+    background-image: linear-gradient(0deg, #111111,#222222 );  
+    color:white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin:0;
+}
+
+main {
+    flex-grow: 1; /* Allow the main content to grow and take all available space */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 800;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    max-width: 734px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #111111; /* 浏览器不支持的时候显示 */
+    flex-grow: 1
+}
+
+#login-formcontainer > *{
+    width: 353px;
+}
+
+#login-formcontainer > .textfield > #login, 
+#login-formcontainer > .textfield > #pass {
+    width: 353px;
+}
+
+#dont-have-account {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+h1 {
+    width: max-content;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    color: #424242;
+    margin: 1rem 5rem;
+    /* padding-bottom: 1rem; */
+}
+
+.double-shadows {
+    font-weight: 900;
+    color: black;
+    text-shadow: 2px 2px #ff81b6, -3px -3px #08fcff;
+}
+
+.double-shadows:hover {
+    font-weight: 900;
+    text-shadow: 2px 2px #08fcff, -3px -3px #ff81b6;
+}
+
+hr {
+    width:80%;
+    border: none; /* Remove the default border */
+    border-top: 1px solid #ff81b633; /* Set a new border color and width */
+    margin: 30px 0; /* Add some margin to space it out from other elements */
+}
+
+hr:nth-of-type(2) {
+    margin-bottom: 40px;
+}
+
+.textfield,
+.checkbox {
+    margin-bottom: 15px;
+}
+
+.textfield {
+    width: 100%;
+}
+
+label {
+    display: block;
+    width:100%;
+    margin-bottom: 5px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 500;
+}
+
+.checkbox {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    margin: 4px 0;
+}
+
+input[type="text"],
+input[type="password"] {
+    min-width: 335px;
+    height: 1.5rem;
+    padding: 8px;
+    font-family: 'Work Sans', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #202020;
+    /* Add transition for smooth effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Shining and highlight border effect on hover */
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border: 1px solid #ff81b6;
+    animation: shining-border 1s infinite;
+    box-shadow: 0 0 8px #ff81b6;/* Highlight color */
+}
+
+input[type="text"]:valid,
+input[type="password"]:valid, 
+input[type="text"]:focus,
+input[type="password"]:focus{
+    background-color: #202020;
+    color: white;
+}
+
+input:-internal-autofill-selected {
+    background-color: #202020;
+    color: white;
+}
+
+.error-message {
+    max-width: 335px;
+}
+
+@keyframes shining-border {
+    0% {
+        border-color: #ccc;
+    }
+    50% {
+        border-color: #ff81b6; /* Shining color */
+    }
+    100% {
+        border-color: #ccc;
+    }
+}
+
+/* Blue Sign-Up button */
+button {
+    margin: 0.8rem auto;
+    background-color: #ff81b6;
+    color: black;
+    width: 353px;
+    height: 3rem;
+    border: 1px solid transparent; 
+    border-radius: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition for hover effect */
+
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #08fcff; /* Change background color on hover */
+}
+
+/* Click effect */
+button:active {
+    transform: scale(0.95); /* Shrink the button on click */
+}
+
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #08fcff;
+  }
+
+/* Error message styles */
+.error-message {
+    color: #08fcff;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.error {
+    border: 1px solid #ff81b6;
+}
+
+#logo-text {
+    font-family: 'Orbitron', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+#logo-img {
+    width: 80px;
+    height: 80px;
+    margin: 1rem;
+}
+
+/* Additional CSS styles for responsiveness */
+@media screen and (max-width: 600px) {
+    .formcontainer {
+        max-width: 96%;
+    }
+}

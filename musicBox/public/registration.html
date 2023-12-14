@@ -1,0 +1,83 @@
+<!-- Author 1: Lei Zhao 041086365 -->
+<!-- Author 2: Zhicheng He 041086226 -->
+<!-- Author 3: Yuling Guo 041069402 -->
+<!-- Author 4: Yu Song 040873597 -->
+<!-- Section: CST8285_301 -->
+<!-- Professor: Shehzeen Shehzeen -->
+<!-- File name: registration.html -->
+<!-- Date: Jul. 23, 2023 -->
+<!-- Description: registration.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Group Music Box">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400" rel="stylesheet">
+    <link rel="stylesheet" href="login_registration_style.css">
+    <script src="login_registration_script.js" defer></script>
+    <title>MusicBox - Registration page</title>
+</head>
+
+
+<body>
+    <header>
+        <img id="logo-img" src="../image/logo.png" alt="logo">
+        <p id="logo-text"> <span class="double-shadows">MusicBox</span>
+        <p>
+    </header>
+    <div class="formcontainer">
+        <h1>Sign-Up <span class="double-shadows">MusicBox</span></h1>
+        <hr>
+        <form action="../private/userReg.php" method="post" onsubmit="return validate();">
+
+            <div class="textfield">
+                <label for="login">User Name</label>
+                <input type="text" name="login" id="login" placeholder="User name">
+            </div>
+
+            <div class="textfield">
+                <label for="email">Email Address</label>
+                <input type="text" name="email" id="email" placeholder="Email">
+            </div>
+
+            <div class="textfield">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Password">
+            </div>
+
+            <div class="textfield">
+                <label for="pass2">Re-type Password</label>
+                <input type="password" id="pass2" placeholder="Password">
+            </div>
+
+            <!-- <div class="checkbox">
+                <input type="checkbox" name="newsletter" id="newsletter">
+                <label for="newsletter">I agree to receive weekly newsletters</label>
+            </div> -->
+            <div class="checkbox">
+                <input type="checkbox" name="terms" id="terms">
+                <label for="terms" id="termsLabel">I agree to the terms and conditions</label>
+            </div>
+
+            <button type="submit" id="submit">Sign-Up</button>
+            <button type="reset" id="reset">Reset</button>
+
+        </form>
+        <hr>
+
+        <div>
+            <p>Have a MusicBox account? <a href="../index.html">Log in</a></p>
+        </div>
+
+    </div>
+    <footer>
+        <div class="CopyRight">Author: Lei Zhao, Zhicheng He, Yuling Guo, Yu Song</div>
+        <div class="CopyRight">Date: 2023-08-03 &copy;All copyright reserved</div>
+    </footer>
+</body>
+
+</html>
